@@ -95,10 +95,8 @@ print("----KX----")
 print(pd_kx)
 print("----KY----")
 print(pd_ky)
-
 KX= np.array(k_unit(kx_mat))
 KY= np.array(k_unit(ky_mat))
-
 # 固有値と固有ベクトルを計算
 x_omega2_1, vx = np.linalg.eig(np.dot(M, KX))
 y_omega2_1, vy = np.linalg.eig(np.dot(M, KY))
